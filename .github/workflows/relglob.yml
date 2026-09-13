@@ -1,0 +1,9 @@
+name: relglob
+on:
+  push:
+    branches: ['release-*']
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "fired on $GITHUB_REF"
